@@ -1,0 +1,302 @@
+@charset "utf-8"
+
+html{font-size: 20px; }
+body{font-size: 1rem;  overflow-x:hidden; width: 100%; display: block;}
+body a {width: 100%; height: 100%;}
+
+
+
+
+
+
+#section1 {
+    max-width: 1670px;  width: calc(100% - 150px);
+    height: 800px;
+    position: relative; margin: 50px auto;
+
+
+}
+
+#section1 .hero {
+    height: 100%;  width: calc(100%-150px);
+
+}
+
+
+#section1 .hero-bg {
+    background-color: #3D3D3D; width: 100%; 
+    border-radius: 25px; display: flex; flex-direction: column;
+    justify-content: space-between
+}
+
+
+/******header 네비게이션*/
+
+#header {
+    padding: 30px 90px; width: 100%;
+    box-sizing: border-box; 
+}
+
+#header .container {
+    display: flex; align-items: center;
+    justify-content: center;
+    position: relative; height: 100%;
+
+
+}
+
+.menu{
+    display: flex; left: 0; position: absolute;
+    height: 100%;
+}
+
+.menu-1 {display: flex; gap: 30px;}
+
+      .menu-3 { display: none;}
+
+.menu ul {
+    display: flex; align-items: center;
+    
+}
+
+.menu li a{
+    color: #EBEBEB; font-size: 1.25rem;
+    font-weight: 200;
+}
+
+
+#header .mailto {
+    background-color: #E6F156; 
+    padding: 7px 50px 7px 20px;
+    transform: rotate(-3.605deg);
+    position: absolute; right: -100px;
+}
+
+#header .mailto a {
+    color: #3D3D3D; font-weight: 200;
+}
+
+
+/******header 메인 텍스트 full*/
+
+.bg-content {
+}
+
+.text-content {
+   
+    display: flex; flex-direction: column;  
+    justify-content: space-between;
+    gap: 0;
+    padding: 0 90px; 
+    box-sizing: border-box;
+    
+
+}
+
+.text-wrap {
+
+    display: flex; flex-direction: column;
+    padding: 40px 0; flex-grow: 1;
+}
+
+    .text-wrap  h1 {
+        color: #E6F156; font-size: 6.25rem;
+
+    }
+
+    .text-wrap h2 {
+        color: #B7C041; font-size: 1.25rem;
+        font-weight: 100;
+        margin-top: 25px;
+    }
+
+    .text-wrap .btn {
+        margin-top: 40px;
+
+    }
+
+    .text-wrap .btn a {
+        box-sizing: border-box;
+        height: 52px; width: 200px;
+        padding: 0 40px;
+        background-color: #E6F156;
+        display: flex; align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        font-size: 1.1rem; font-weight: 200;
+    }
+
+    .text-wrap .btn a:hover {
+        background-color: #D3DE48;
+    }
+
+
+
+.bottom-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;  padding : 45px 0 ;
+
+}
+
+.bottom-text h3 {
+    color: #949494; font-size: 0.85rem;
+    font-weight: 100; margin-bottom: 20px;
+}
+
+
+
+
+
+
+/************************************1200px******************/
+
+@media screen and (max-width: 1200px) {
+
+    #section1 {
+        width: calc(100% - 120px);
+        height: 650px;
+        position: relative; margin: 50px auto; }
+
+
+
+
+    #header {
+        padding: 30px 60px; }
+
+        #header .container {
+            display: flex; align-items: center;
+            justify-content: center;
+            position: relative; height: 100%; 
+        }
+
+
+    .menu-1 li { display: none;}
+
+    .menu-3 {
+        display: block; 
+    
+    }
+
+
+    #header .mailto {
+        padding: 7px 35px 7px 20px;
+        right: -80px;
+    }
+
+/******header 메인 텍스트 1200x*/
+
+.text-content { 
+    padding: 0 60px;
+}
+     
+.text-wrap {
+
+    display: flex; flex-direction: column;
+    padding: 20px 0;
+}
+
+.text-wrap .main-text {
+
+}
+
+.text-wrap h1 {
+    font-size: 6.5vw;
+    
+}
+
+.text-wrap h2 {
+    font-size: 1.1rem;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/************************************650px******************/
+
+@media screen and (max-width: 650px) {
+
+    #section1 {
+        width: calc(100% - 40px);
+    }
+
+
+    #header {
+        padding: 40px 25px; }
+
+        #header .container {
+            display: flex; align-items: center;
+            justify-content: center;
+            position: relative; height: 100%; }
+
+    .logo { display: none;}
+
+
+
+
+    #header .mailto {
+        padding: 7px 15px 7px 15px;
+        right: -35px;
+    }
+
+/******header 메인 텍스트 650*/
+
+    .text-content {
+        padding: 0 25px;
+
+
+ 
+        
+    }
+
+    .text-wrap {
+        padding: 60px 15px;
+        align-items: center;
+        
+    }
+
+    .text-wrap h1 {
+        font-size: 6.5vh;
+        text-align: center;
+    }
+
+    .text-wrap h2 {
+        font-size: 1srem;
+        text-align: center;
+    }
+    
+    .text-wrap .btn {
+
+        width: 80%;
+
+    }
+
+    .text-wrap .btn a {
+        display: flex; align-items: center;
+        width: 100%;
+
+
+    }
+
+    .bottom-text {
+        flex-direction:column;
+        align-items: center;
+        margin-bottom: -90px;
+    }
+
+
+
+
+
+}
