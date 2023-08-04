@@ -6,37 +6,21 @@ body a {width: 100%; height: 100%;}
 
 
 
-
+/*그리드 템플릿 설정*/
 #section3 {
     max-width: 1220px;
-    width: calc(100% - 250px);
+    width:  calc(100% - 100px);
+
     margin: 0 auto;
     padding: 100px 0;
     position: relative;
-}
-/*
-#section3 .pf {
-
-    display: grid;
-    grid-template-columns: 1fr 1fr ; 
-    grid-gap: 53px;
-
-   
-}
-
-.pf-info {
-    background-color: #3C3D3D;
-    border-radius: 23px;
 
 }
-
-*/
 
 
 
 #section3 .pf {
-    margin-left: 20px;
-    margin-right: 20px;
+
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -47,41 +31,76 @@ body a {width: 100%; height: 100%;}
                 "pf1 pf1 pf2 pf2"
                 "pf1 pf1 pf3 pf4";
 
+
+    
+
             
     
 }
 
+
 .item {
-    min-height: 275px;
+
+    position: relative;
     border-radius: 23px;
+
 }
 
+/*박스 2,3,4 타이틀,버튼 공통영역*/
+
+
+.pf .text {
+    margin: 30px 30px;
+
+}
+
+.text h1 {
+    margin-top: 10px;
+    font-size: 1.6875rem;
+    color: #3C3D3D;
+    font-weight: 300;
+}
+
+
+.text .btn {
+        position: absolute;
+        bottom: 30px;
+
+    }
+
+
+
+/*그리드 각각 아이템 설정*/   /*박스1*/
 .pf .pf1 {
     grid-area: pf1;
     padding: 45px 45px;
+
     background-color: #3C3D3D;
+
 
 
 }
 
-        .pf-info {
-            display: flex;
-            flex-direction: column;
-            align-content: center;
 
-        }
+.pf-info {
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between
+
+
+}
+
+
+
 
             .pf-info h2 {
                 color: #C3C3C3; font-size: 1.0625rem;
                 font-weight: 100;
             }
 
-            .pf-info .info-t-b {
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-                margin-top: 5px;
-            }
+
 
             .pf-info h1 {
                 color: #E6F156; font-size: 3.125rem;
@@ -93,6 +112,12 @@ body a {width: 100%; height: 100%;}
             }
 
 
+        .pf-info .info-b {
+            width: calc(100% - 60px);
+
+        }        
+
+
         .info-b h3 {
             color: #9D9E87; font-size: 1.0625rem;
             font-weight: 100;
@@ -101,7 +126,7 @@ body a {width: 100%; height: 100%;}
 
 
 
-
+/*그리드 각각 아이템 설정*/   /*박스2*/
 
 .pf .pf2 {
     grid-area: pf2;
@@ -112,43 +137,6 @@ body a {width: 100%; height: 100%;}
 
 
 }
-
-.pf .text {
-    margin: 30px 30px;
-    position: relative;
-
-}
-
-.pf  .text h1 {
-    margin-top: 10px;
-    font-size: 1.6875rem;
-    color: #3C3D3D;
-}
-
-
-.pf .text button {
-        position: absolute;
-        bottom: 0;
-
-    }
-
-    .pf .text button a {
-        display: flex; align-items: center;
-        justify-content: center;
-        border-radius: 7px;
-    }
-
-    .pf  .text .btn-b { 
-        width: 118px; height: 41px;
-        background-color: #3C3D3D;
-        color: #E6F156;
-        font-weight: 100;
-
-
-    }
-
-
-
 
 
 .pf .pf2  img {
@@ -161,13 +149,194 @@ body a {width: 100%; height: 100%;}
 
 
 
+
+
+/*그리드 각각 아이템 설정*/   /*박스3*/
+
+
 .pf .pf3 {
     grid-area: pf3;
     background-color: #3C3D3D;
+    box-sizing: border-box; width: 100%;
+    background-image: url("../img/web-img.svg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+
 
 }
 
+.pf3 .h1-y {
+    color: #E6F156;
+}
+
+
+
+
+
+/*그리드 각각 아이템 설정*/   /*박스4*/
 .pf .pf4 {
     grid-area: pf4;
     background-color: #AEA6D2;
+
+    background-image: url("../img/branding-img.svg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+/************************************1200px******************/
+
+
+@media screen and (max-width: 1200px) {
+
+    #section3 {
+
+        width:  calc(100% - 120px);
+    
+        margin: 0 auto;
+        padding: 100px 0;
+        position: relative;
+    
+    }
+
+
+    #section3 .pf {
+
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        row-gap: 30px;
+        grid-template-areas:
+                    "pf1 pf1"
+                    "pf2 pf2"
+                    "pf3 pf4";
+    
+        
+    
+    }
+
+    .pf .text {
+        margin: 40px 40px;
+    }
+
+    .pf .btn {
+        bottom: 40px;
+    }
+
+
+/*그리드 각각 아이템 설정*/   /*1200 박스1*/
+
+.pf1 {
+    padding-bottom: 30;
+}
+
+    .pf-info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pf-info .info-b {
+        width: 80%;
+        margin-top: 30px;
+
+    }        
+
+
+    .pf-info .info-b h3 {
+        font-size: .95rem;
+ 
+    }
+    
+
+
+
+
+
+
+
+/*그리드 각각 아이템 설정*/   /*1200 박스2*/
+
+.pf2 {
+    
+}
+
+.pf .pf2  img { 
+    margin-right: 40px;
+    
+} 
+
+.pf2-img {
+    bottom:0;
+    position: absolute;
+    right: 0;
+
+}
+
+
+
+
+
+}
+
+
+
+
+
+/************************************650px******************/
+
+
+@media screen and (max-width: 650px) {
+
+    #section3 {
+        width: calc(100% - 40px);
+    }
+
+    #section3 .pf {
+
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, minmax(344px, 1fr));
+
+        row-gap: 40px;
+        grid-template-areas:
+                    "pf1"
+                    "pf2"
+                    "pf3"
+                    "pf4";
+    
+        
+    
+    }
+
+    .text h1 {
+        font-size: 2rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
