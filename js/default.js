@@ -3,7 +3,7 @@ $(document).ready(function(){
   history.scrollRestoration = "auto";
 
 
-/*
+
     const $text = document.querySelector(".typing");
 
     // 글자 모음
@@ -59,7 +59,7 @@ $(document).ready(function(){
 
 
 
-*/
+
 
 
 

@@ -11,7 +11,7 @@ body a {width: 100%; height: 100%;}
     max-width: 1200px;
     width: calc(100% - 100px);
     margin: 0 auto;
-    padding: 350px 0;
+    padding: 220px 0;
     position: relative;
 
 
@@ -140,9 +140,322 @@ body a {width: 100%; height: 100%;}
 
 
 
+}
+
+
+
+
+/**************************************section5*******tool carousel******************************************/
+
+
+#section5 {
+    position: relative; overflow: hidden;  width: 100%;
+    height: 200px;
+}
+
+#section5  .tool {
+   display: flex; justify-content: center; align-items: center;
+    position: absolute; 
+
+}
+
+#section5 .item :hover {transform: scale(1.02);}
+
+
+#section5 .item {
+   display: flex; cursor: pointer; justify-content: center; 
+   height: 56px; border-radius: 29px; margin: 0 0 10px 10px;
+}
+
+
+
+
+#section5 .to-1 {
+   width: 209px;  
+   background: #C3D2BE;
+}
+
+/*ps*/
+#section5 .to-2 {    
+   width: 205px; 
+   background: #E6F156;  }
+
+
+/*illust*/
+#section5 .to-3 {    
+       width: 196px;
+       background: #E6F156;  }
+
+
+#section5 .to-4 {
+       width: 56px;
+       background: #ED946E; }
+
+
+/*blender*/
+#section5 .to-5 {    
+           width: 171px;
+           background: #E6F156;}
+
+
+#section5 .to-6 {
+       width: 136px; 
+       background: #DB4C42; }
+
+
+   
+/*figma*/
+#section5 .to-7 {    
+           width: 150px;
+           background: #E6F156;  }
+
+
+#section5 .to-8 {
+       width: 105px; 
+       background: #AEA6D2; }
+
+
+
+/*google*/
+#section5 .to-9 {    
+   width: 274px; 
+   background: #E6F156;  }
+
+
+
+#section5 .to-10 {
+   width: 156px;
+   background: #3D3D3D; }
+
+
+/*html*/
+#section5 .to-11 {    
+   width: 135px; 
+   background: #E6F156;  }
+
+
+/*css*/
+#section5 .to-12 {    
+   width: 120px; 
+   background: #E6F156;  }
+
+
+
+#section5 .tool h3 {font-size: font-size: 1.575rem; text-align: center; line-height: 56px}
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************section6********************************************************************************/
+
+
+#section6 {
+    max-width: 1670px;
+    width: calc(100% - 150px);
+    position: relative;
+    margin: 0 auto;
+    height: 290px;
+    padding : 150px 0 ;
+}
+
+#section6 .contact {
+    background-color: #3D3D3D;
+    border-radius: 23px;
+    height: 100%;
+    padding: 0 45px;
+
+}
+
+
+.contact-t {
+    display: flex;
+    align-items: center; justify-content: space-between;
+    height: 100%;
+}
+
+.contactme {
+    display: flex;
+}
+
+.contactme h2 {
+    margin-left: 10px;
+    color: #AEA6D2;
+    font-size: 1.5625rem;
+
+}
+
+
+.me-text {
+    margin-left: 20px;
+}
+
+.me-text h3 {
+    font-size: 0.9375rem;
+    color: #A49EC0;
+    font-weight: 100;
+    margin-top: 23px;
+}
+
+
+.my-info {
+    display: flex;
+    margin-top: 65px;
+    
+}
+
+.my-info h2 {
+    color: #E6F156;
+    font-size: 1.4375rem;
+    margin: 0 20px;
+
+}
+
+.my-info .line {
+    height: 23px;
+    width: 0px;
+    border-left: 0.5px dashed #E6F156;
+    margin-top: 3px;
 
 
 }
+
+
+
+/*************section55555***********************1200px******************/
+
+
+@media screen and (max-width: 1200px) { 
+
+    #section6 .contact {
+
+        padding: 0 25px;
+    
+    }
+
+
+    .my-info {
+        margin-top: 70px;
+        
+    }
+
+    .my-info h2 {
+        color: #E6F156;
+        font-size: 1.2rem;
+        margin: 0 20px;
+    
+    }
+
+    .my-info .line {
+        height: 19px;
+    }    
+
+
+
+
+
+
+}
+
+
+
+/*************section55555***********************1020px******************/
+
+
+@media screen and (max-width: 1020px) {
+
+
+
+    .contact-t {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contactme {
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+
+        
+    }
+
+    .contactme img {
+       display: none;
+    }
+    .contactme h2 {
+        margin-left: 0;
+    }
+
+    .me-text h3 {
+        margin-top: 10px;
+    }
+
+    .me-text {
+        text-align: center;
+        margin-left: 0;
+    }
+
+
+
+
+
+    .my-info {
+        margin-top: 30px;
+    }
+
+
+
+
+
+
+
+}
+
+
+/*************section55555***********************650px******************/
+
+
+@media screen and (max-width: 650px) {
+
+    #section6 {
+        width: calc(100% - 40px);
+    }
+
+    #section6 .contact {
+        padding: 0 15px;
+    }
+
+    .contactme {
+        margin-top: 0;
+    }
+    
+    .my-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my-info .line {
+        display:none;
+    }
+
+    .my-info .mail {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
 
 
 
