@@ -78,6 +78,14 @@ body a {width: 100%; height: 100%;}
     display: none;
 }
 
+.img-btn {
+    display: none;
+}
+
+
+
+
+
 
 
 /*그리드 각각 아이템 설정*/   /*박스1*/
@@ -191,7 +199,7 @@ body a {width: 100%; height: 100%;}
     grid-area: pf4;
     background-color: #AEA6D2;
 
-    background-image: url("../img/branding-img.svg") ;
+    background-image: url("../img/branding-img.png") ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -311,6 +319,7 @@ body a {width: 100%; height: 100%;}
 
     #section3 {
         width: calc(100% - 40px);
+        margin-bottom: 80px;
     }
 
     #section3 .pf {
@@ -330,6 +339,8 @@ body a {width: 100%; height: 100%;}
         font-weight: 500;
 
     }
+
+
 
 
 
