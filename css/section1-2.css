@@ -76,6 +76,8 @@ body a {width: 100%; height: 100%;}
     color: #3D3D3D; font-weight: 200;
 }
 
+.ham-con {display: none;}
+
 
 /******header 메인 텍스트 full*/
 
@@ -188,16 +190,134 @@ body a {width: 100%; height: 100%;}
 
     .menu-1 li { display: none;}
 
-    .menu-3 {
-        display: block; 
-    
-    }
-
-
     #header .mailto {
         padding: 7px 35px 7px 20px;
         right: -80px;
     }
+
+
+
+
+
+/**햄버거 메뉴**/
+
+.menu-3 {
+    display: block; 
+    margin-top:22px ;
+    z-index: 999;
+
+}
+
+.ham-con {display: block;}
+
+.menu-trigger {
+    margin-right: 70px;
+    margin-bottom: 50px;
+
+  }
+  .menu-trigger,
+  .menu-trigger span {
+    display: inline-block;
+    transition: all .4s;
+    box-sizing: border-box;
+  }
+  
+  .menu-trigger {
+    position: relative;
+    width: 28px;
+    height: 21px;
+  }
+  
+  .menu-trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #E6F156;
+    border-radius: 4px;
+  }
+  
+  .menu-trigger span:nth-of-type(1) {
+    top: 0;
+
+  }
+  
+  .menu-trigger span:nth-of-type(2) {
+    top: 10px;
+  }
+  
+  .menu-trigger span:nth-of-type(3) {
+    bottom: 0;
+  }
+
+/* type-01 */
+/* 중앙 라인이 고정된 자리에서 투명하게 사라지며 상하라인 회전하며 엑스자 만들기 */
+
+
+
+
+.menu-trigger.active-1 span:nth-of-type(1) {
+    -webkit-transform: translateY (1px) rotate (-45deg);
+    transform: translateY(1px) rotate(-45deg);
+    background-color: #3D3D3D;
+
+  }
+  
+  .menu-trigger.active-1 span:nth-of-type(2) {
+    opacity: 0;
+  }
+  
+  .menu-trigger.active-1 span:nth-of-type(3) {
+    -webkit-transform: translateY(-20px) rotate(45deg);
+    transform: translateY(-20px) rotate(45deg);
+    background-color: #3D3D3D;
+
+  }
+
+
+/*햄버거 메뉴 on design*/
+
+
+.ham-con {
+    width: calc(100% - 160px);
+    height: 150px; left: 80px;
+    position: fixed;
+    border-radius: 19px;
+background: rgba(255, 255, 255, 0.80);
+backdrop-filter: blur(4px);
+margin-top: 20px;
+
+
+
+}
+
+.ham-menu-wrap {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ham-top-menu {
+    display: flex;
+    gap: 80px;
+    padding-top: 35px;
+
+}
+
+.ham-top-menu a {
+    font-size: 3vw;
+    color: #3D3D3D;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
 
 /******header 메인 텍스트 1200x*/
 
@@ -256,7 +376,7 @@ body a {width: 100%; height: 100%;}
             position: relative; height: 100%; }
 
 
-    .menu-3 { margin-top: -10px;}        
+    .menu-3 { margin-top: -5px;}        
 
     .logo { display: none;}
 
@@ -316,6 +436,39 @@ body a {width: 100%; height: 100%;}
         align-items: center;
         margin-bottom: -90px;
     }
+
+
+    .ham-con {
+        width: calc(100% - 72px);
+        height: 350px; left: 35px;
+        margin-top: 12px;
+    }
+
+    .ham-menu-wrap {
+        height: 350px;
+
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .ham-top-menu {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+        padding-top: 15px;
+    
+    }
+    
+    .ham-top-menu a {
+        font-size: 5vw;
+        color: #3D3D3D;
+        font-weight: 700;
+    }
+
 
 
 
