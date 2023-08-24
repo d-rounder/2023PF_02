@@ -155,6 +155,35 @@ $('#toggle').click(function() {
 
 
 
+//햄버거 버튼 스크롤 고정
+
+$('.window .close').click(function (e) {
+  //Cancel the link behavior
+  e.preventDefault();
+});     
+
+
+    // 스크롤 제한 ON
+    function scroll_on() {
+      $('.scroll_on()').on('scroll touchmove mousewheel', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          return false;
+      });
+  }
+
+  // 스크롤 제한 OFF
+  function scroll_off() {
+      $('.menu-3').off('scroll touchmove mousewheel');
+  }
+
+ 
+ 
+
+
+
+
+
 
 });
 

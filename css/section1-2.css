@@ -62,7 +62,32 @@ body a {width: 100%; height: 100%;}
 .menu-1 li a{
     color: #d4d4d4ea; font-size: 1.1rem;
     font-weight: 100;
+    position: relative;
+  display: inline-block;
+  transition: .3s;
 }
+
+
+.menu-1 li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #AEA6D2;
+    transition: .3s;
+  }
+
+  .menu-1 li a:hover {
+    color: #AEA6D2;
+  }
+
+  .menu-1 li a:hover::after {
+    width: 100%;
+  }
+
+
 
 
 #header .mailto {
@@ -446,7 +471,19 @@ margin-top: 20px;
     .fullscreen-menu li a {
         font-size: 2.5rem;
         font-weight: 800;
+        position: relative;
+        display: inline-block;
+        transition: .3s;
     }
+
+    .fullscreen-menu li a:hover {
+
+        color: #AEA6D2;
+        transition: .2s;
+
+    }
+
+
 
 
 
