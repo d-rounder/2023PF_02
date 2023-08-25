@@ -149,36 +149,59 @@ var h = 0;
 $('#toggle').click(function() {
   $(this).toggleClass('active');
   $('#fullscreen').toggleClass('open');
+  
+
  });
 
 
+ $('#fullscreen').on('scroll touchmove mousewheel', function(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  return false;
+
+});
+
+
+const opne = document.querySelector(".menu-trigger") 
+const close = document.querySelector(".sc-click");
+const modal = document.querySelector(".fullscreen");
+
+
+function init() {
+  opne.addEventListener("click", function(){
+    modal.classList.remove("sc-close");
+  });
+
+
+  close.addEventListener("click", function(){
+    modal.classList.add("sc-close");
+  });
+}
+init();
 
 
 
-//햄버거 버튼 스크롤 고정
-
-$('.window .close').click(function (e) {
-  //Cancel the link behavior
-  e.preventDefault();
-});     
 
 
-    // 스크롤 제한 ON
-    function scroll_on() {
-      $('.scroll_on()').on('scroll touchmove mousewheel', function(e) {
-          e.preventDefault();
-          e.stopPropagation();
-          return false;
-      });
-  }
 
-  // 스크롤 제한 OFF
-  function scroll_off() {
-      $('.menu-3').off('scroll touchmove mousewheel');
-  }
+
 
  
- 
+ //메뉴 스크롤 이동
+
+ $(document).ready(function($) {
+  $(".scroll_move").click(function(event){
+      console.log(".scroll_move");         
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
+  });
+
+});
+
+
+
+
+
 
 
 
@@ -186,8 +209,6 @@ $('.window .close').click(function (e) {
 
 
 });
-
-
 
 
 

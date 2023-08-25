@@ -347,6 +347,7 @@ margin-top: 20px;
 
 /**햄버거 메뉴 2**/
 
+.sc-close {display: none;}
 
 .menu-3 {display: block;
 }
@@ -364,6 +365,7 @@ margin-top: 20px;
     display: inline-block;
     transition: all .4s;
     box-sizing: border-box;
+    position: fixed;
   }
   
   .menu-trigger {
